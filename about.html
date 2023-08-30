@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>University Website Design - Kurban Samet Öztürk </title>
+</head>
+<body>
+  <section class="sub-header"> 
+    <nav>
+      <a href="index.html"><img class="logo-img" width="200" height="130" src="img/izzet-baysal-1-1024x634.jpg" alt=""></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()" ></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()" ></i>
+    </nav>
+    <h1>About Us</h1>
+  </section>
+
+
+  <!------About Us Content------>
+
+  <section class="about-us">
+    <div class="row">
+      <div class="about-col">
+        <h1>We are the world's largest niversity</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit animi esse ea in quos porro distinctio pariatur, cum aut veritatis maxime a fugiat earum velit ad ipsum, necessitatibus corporis voluptas. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente consequuntur cumque tempore dolorem est sunt vero suscipit dicta fugit voluptatum!</p>
+        <a href="" class="hero-btn red-btn" >EXPLORE NOW</a>
+      </div>
+      <div class="about-col">
+        <img src="img/toplantı.jpeg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!------ Footer ------>
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam nulla sequi ratione error hic at <br> vel eum maxime mollitia iusto! Blanditiis debitis voluptatem aut quasi adipisci hic nobis, assumenda harum.</p>
+    <div class="icons">
+      <i class="fa fa-yin-yang" ></i>
+      <i class="fa fa-t-shirt" ></i>
+      <i class="fa fa-industry" ></i>
+      <i class="fa fa-yen-sign" ></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-broken" ></i> by Kurban Samet Öztürk</p>
+  </section>
+
+
+  <!--  Javascript for Toggle Menu  -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
